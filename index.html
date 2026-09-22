@@ -226,18 +226,17 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
       <text class="aud" transform="translate(1132,480) rotate(90)">Auditorio 2</text>
 
       <!-- Zonas dentro del auditorio (stands 5 a 22, en orden de la lista) -->
-      <g class="zone"><rect x="462" y="74" width="262" height="19" rx="9.5"/><text x="593" y="87.5">Zona 1</text></g>
-      <g class="zone"><rect x="790" y="74" width="262" height="19" rx="9.5"/><text x="921" y="87.5">Zona 2</text></g>
-      <g class="zone"><rect x="1073" y="208" width="19" height="242" rx="9.5"/><text transform="translate(1086,329) rotate(-90)">Zona 3</text></g>
-      <g class="zone"><rect x="441" y="178" width="19" height="270" rx="9.5"/><text transform="translate(454,313) rotate(-90)">Zona 4</text></g>
-      <g class="zone"><rect x="455" y="555" width="600" height="19" rx="9.5"/><text x="755" y="568.5">Zona 5</text></g>
+      <g class="zone"><rect x="462" y="74" width="262" height="19" rx="9.5"/><text x="593" y="87.5">Ahorro y Tarjetas</text></g>
+      <g class="zone"><rect x="790" y="74" width="262" height="19" rx="9.5"/><text x="921" y="87.5">Innovación y Protección</text></g>
+      <g class="zone"><rect x="1073" y="208" width="19" height="242" rx="9.5"/><text transform="translate(1086,329) rotate(-90)">Créditos y Talento</text></g>
+      <g class="zone"><rect x="441" y="178" width="19" height="270" rx="9.5"/><text transform="translate(454,313) rotate(-90)">Aceptación y Leasing</text></g>
+      <g class="zone"><rect x="455" y="555" width="600" height="19" rx="9.5"/><text x="755" y="568.5">Pagos y Conciliación</text></g>
 
       <!-- Pasillo del Río: entrada, primeros 4 de la lista. Etiquetas de estos stands van ARRIBA (dentro del pasillo) -->
       <rect x="437" y="700" width="663" height="66" rx="3" fill="none" stroke="#5BC8E8" stroke-width="1.2" stroke-dasharray="4 6" opacity=".8"/>
-      <text class="poi" x="450" y="694" style="fill:#5BC8E8">Pasillo del Río</text>
-      <rect x="600" y="778" width="280" height="46" rx="6" fill="#1E1D1B"/>
-      <text class="poi big" x="740" y="800" style="fill:#FFE54D">Entrada · Río</text>
-      <line x1="740" y1="776" x2="740" y2="768" stroke="#FFE54D" stroke-width="3" marker-end="url(#arrY)"/>
+      <text class="poi" x="580" y="776" style="fill:#5BC8E8">Pasillo del Río</text>
+      <text class="poi big" x="880" y="795">Río</text>
+      <text class="poi" x="880" y="812" style="fill:#FFE54D">Entrada ↑</text>
 
       <g id="links"></g>
       <g id="stands"></g>
@@ -275,11 +274,11 @@ const NS='http://www.w3.org/2000/svg';
 
 const ZONES={
   R:{n:'Pasillo del Río (entrada)',s:'Pasillo del Río'},
-  A:{n:'Zona 1',s:'Zona 1'},
-  B:{n:'Zona 2',s:'Zona 2'},
-  C:{n:'Zona 3',s:'Zona 3'},
-  D:{n:'Zona 4',s:'Zona 4'},
-  E:{n:'Zona 5',s:'Zona 5'}
+  A:{n:'Ahorro y Tarjetas',s:'Ahorro y Tarjetas'},
+  B:{n:'Innovación y Protección',s:'Innovación y Protección'},
+  C:{n:'Créditos y Talento',s:'Créditos y Talento'},
+  D:{n:'Aceptación y Leasing',s:'Aceptación y Leasing'},
+  E:{n:'Pagos y Conciliación',s:'Pagos y Conciliación'}
 };
 
 /* Orden: 1-4 en el pasillo del Río (entrada), 5-22 dentro del auditorio, en el orden de tu lista de 22 expositores.
@@ -303,12 +302,12 @@ const D=[
  name:'Pagos Inmediatos Empresariales',tag:'Pagos a otras entidades, a toda hora.',stat:['7×24','de domingo a domingo'],
  b:[{p:'Se habilitaron pagos a cuentas de otras entidades financieras a través de ACH Colombia, abonados en NRT (Near Real Time) y no por ciclos.'},
     {ul:['Una experiencia nueva, disponible 7x24, de domingo a domingo.','Antes: transacciones por ciclos, con restricciones de horario (antes de las 3 p. m.) y solo en días hábiles.']}]},
-{id:5,z:'E',x:970,y:485,pos:'b',lab:['Misiones','de confianza'],
+{id:5,z:'E',x:880,y:600,pos:'b',lab:['Misiones','de confianza'],
  name:'Misiones de confianza: pagos y recaudos siempre disponibles',tag:'Contingencia activa cuando el Iseries no esté disponible.',stat:['+3 meses','de trabajo conjunto'],
  b:[{p:'Después de la crisis de febrero de 2026, el equipo trabajó en las misiones de confianza No. 2 (Pagos) y No. 5 (Recaudos).'},
     {ul:['Más de 3 meses de trabajo junto a CoreX, PSH y Canales.','Contingencia puesta a prueba el 11 de julio.','Retorno el 25 de julio, con una ventana de 14 horas que puso a prueba todo este esfuerzo.']},
     {p:'Todo, para dar la mejor experiencia posible a nuestros clientes.'}]},
-{id:6,z:'E',x:880,y:600,pos:'b',lab:['Digicanje'],
+{id:6,z:'E',x:970,y:485,pos:'b',lab:['Digicanje'],
  name:'Digicanje: cheques con un proceso moderno y digital',tag:'El canje de cheques, modernizado.',
  b:[{p:'Se implementa una solución en la nube para el manejo del proceso de canje de cheques en sucursales.'},
     {p:'El objetivo: jubilar un proceso obsoleto y sin opción de mejoramiento, y llevarlo a uno 100% en la nube, automático y escalable.'}]},
